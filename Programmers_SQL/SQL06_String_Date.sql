@@ -20,9 +20,10 @@ WHERE REGEXP_LIKE(NAME, 'EL', 'i')
 AND ANIMAL_TYPE = 'Dog'
 ORDER BY NAME;
 
--- 03. 중성화 여부 파악하기
+-- 03. 중성화 여부 파악하기 -- 꽤 어려웠음 replace를 두번 하면 됨
 SELECT ANIMAL_ID, NAME, REGEXP_REPLACE(
-    REGEXP_REPLACE(SEX_UPON_INTAKE, '(Neutered|Spayed).*', 'O'), '(Intact).*', 'X')
+    REGEXP_REPLACE(SEX_UPON_INTAKE, '(Neutered|Spayed).*', 'O')
+    , '(Intact).*', 'X')
 FROM ANIMAL_INS
 ORDER BY ANIMAL_ID;
 
