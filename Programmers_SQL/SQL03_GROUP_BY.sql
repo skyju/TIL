@@ -54,17 +54,14 @@ ON D.HOUR = A.HOUR
 ORDER BY D.HOUR;
 
 -- MySQL
--- RECURSIVE?
+-- RECURSIVE 이용
 -- WITH RECURSIVE (VIEW이름) AS(
--- 초기 SQL
--- UNION ALL(OR UNION)
--- 반복할 SQL(+반복문을 멈출 WHERE절 포함)
+-- 초기SQL UNION [ALL] 반복할SQL(+반복문을 멈출 WHERE절 포함)
 -- ) SELECT * FROM (VIEW이름)
 
 -- 원리
 -- 1. 초기 SQL을 실행하면 실행한 결과셋은 recursive문을 선언할때 기재한 뷰에 담긴다.
--- 2. 반복할 SQL의 from 절에 뷰명을 이용해서 처리하거나 한다. 
---      이는 상황에 따라 다르지만 주로 뷰명을 from절에 두고 반복문을 돌리는 것이 일반적이다.
+-- 2. 반복할 SQL의 from 절에 뷰명을 이용해서 처리하거나 한다. 이는 상황에 따라 다르지만 주로 뷰명을 from절에 두고 반복문을 돌리는 것이 일반적이다.
 -- 3. union 혹은 union all 연산을 한다.(경우에따라 다름 마이너스도 가능)
 -- 4. 반복할 SQL에서 단하나의 레코드가 나오지 않을때 recursive문을 탈출한다.
 -- 5. recursive문을 탈출하였으면 뷰명에 연산된 결과셋이 다시 담기게되고 뷰처럼 조회할 수 있다.
