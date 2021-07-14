@@ -40,7 +40,7 @@ Python을 사용하고 있다면, input 대신 sys.stdin.readline을 사용할 �
 
 ---
 # 내 제출
-<pre>
+~~~java
 import java.io.*;
 import java.util.*;
 
@@ -61,4 +61,4 @@ public class Main {
 		bw.close();
 	}
 }
-</pre>
+~~~
