@@ -30,7 +30,7 @@ X보다 작은 수를 입력받은 순서대로 공백으로 구분해 출력한
 
 ---
 # 내 제출
-<pre>
+~~~java
 import java.util.Scanner;
 
 public class Main {
@@ -50,4 +50,4 @@ public class Main {
 		}
 	}
 }
-</pre>
+~~~
