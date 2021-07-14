@@ -40,7 +40,7 @@
 
 ---
 # 내 제출
-<pre>
+~~~java
 import java.util.Scanner;
 
 public class Main {
@@ -57,4 +57,4 @@ public class Main {
 		}
 	}
 }
-</pre>
+~~~
