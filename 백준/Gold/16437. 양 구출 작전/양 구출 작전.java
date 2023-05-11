@@ -4,6 +4,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.StringTokenizer;
 
+// ****************************************************
+// Linked list index참조로 하려면 List[]로 해야겟죠?? 
+
 class Main {
     static int N;
     static List<Integer>[] list;
