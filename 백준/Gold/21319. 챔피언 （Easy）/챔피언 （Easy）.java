@@ -24,9 +24,8 @@ public class Main {
         int right = list.size() - 1;
 
         StringBuilder sb = new StringBuilder();
-        if (!canChampion(list.get(right))) {
-            // 가장 높은 값 중 가장 왼쪽 값을 대상으로 챔피언이 안되었을 때 불가능하다고 판단합니다.
-            // 사실 배열의 모든 값이 다 같은 경우가 아니면 가능합니다.
+        // 배열의 모든 값이 다 같은 경우
+        if (hubo.length > 1 && list.size() == 1) {
             System.out.println(-1);
         } else {
             // 이분탐색을 진행합니다.
@@ -65,3 +64,5 @@ public class Main {
     }
 
 } // class end
+
+
